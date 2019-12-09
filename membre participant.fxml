@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Fichier">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Édition">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Aide">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <SplitPane dividerPositions="0.2650334075723831" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane prefHeight="573.0" prefWidth="235.0">
+          <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" style="&#10;" text="Bienvenue" textAlignment="CENTER" wrapText="false">
+              <font>
+                <Font size="22.0" fx:id="x1" />
+              </font>
+            </Label>
+                  <Text layoutX="14.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Label alignment="CENTER" layoutX="95.0" layoutY="80.0" minWidth="60.0" style="&#10;" text="Membre participant" textAlignment="CENTER" underline="true" wrapText="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="62.0" minWidth="60.0" prefHeight="49.0" prefWidth="131.0" style="&#10;" text="Vous être connecté en tant que:" wrapText="true">
+                     <font>
+                        <Font size="14.0" fx:id="x11" />
+                     </font>
+                  </Label>
+                  <Button layoutX="14.0" layoutY="111.0" mnemonicParsing="false" text="Déconnection" />
+          </children>
+        </AnchorPane>
+            <ScrollPane hbarPolicy="ALWAYS" prefHeight="573.0" prefWidth="580.0" vbarPolicy="ALWAYS">
+               <content>
+                  <TabPane prefHeight="559.0" prefWidth="655.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Inscription aux cours">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutY="65.0" prefHeight="21.0" prefWidth="644.0" />
+                                    <Text layoutX="8.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voici les cours présentement offert au programme de formation de 2019:" wrappingWidth="638.13671875">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <GridPane gridLinesVisible="true" layoutX="1.0" layoutY="78.0" prefHeight="177.0" prefWidth="641.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="0.0" prefWidth="0.0" />
+                                          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="0.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="08/10/2019 - 08/11/2019" textAlignment="CENTER" wrappingWidth="219.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="4.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Éthique et culture religieuse" wrappingWidth="113.13671875">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="4.0" />
+                                                   </VBox.margin>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NoCours:12345" wrappingWidth="121.552734375">
+                                                   <VBox.margin>
+                                                      <Insets left="4.0" />
+                                                   </VBox.margin>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Histoire de l'art contemporain" wrappingWidth="105.13671875">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="4.0" />
+                                                   </VBox.margin>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NoCours:24567" wrappingWidth="118.552734375">
+                                                   <VBox.margin>
+                                                      <Insets left="4.0" />
+                                                   </VBox.margin>
+                                                </Text>
+                                             </children>
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                          </VBox>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="163.13671875" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="07/10/2019 - 08/11/2019" textAlignment="CENTER" wrappingWidth="221.13671875" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                             <children>
+                                                <CheckBox mnemonicParsing="false" selected="true" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                             <children>
+                                                <CheckBox mnemonicParsing="false" />
+                                             </children>
+                                          </HBox>
+                                          <VBox alignment="CENTER" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="1">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dates" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: lightgrey;">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Intitulé Cours et NoCours" textAlignment="CENTER" wrappingWidth="139.41015625">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="2">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tarif cours" textAlignment="CENTER" wrappingWidth="122.748046875">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="57.0" prefWidth="132.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="3">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sélection" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1250$" />
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="800$" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </GridPane>
+                                    <Text layoutX="8.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez sélectionner les cours qui vous intéresse en utilisant les cases à cocher correspondantes et cliquer sur le bouton ci-dessous pour compléter l'inscription" wrappingWidth="631.13671875">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Button layoutX="242.0" layoutY="369.0" mnemonicParsing="false" text="Compléter l'inscription">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="Évaluation des cours">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutY="65.0" prefHeight="21.0" prefWidth="644.0" />
+                                    <Text layoutX="8.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voici les cours auquel vous êtes présentement inscrits dans le programme de formation de 2019:" wrappingWidth="638.13671875">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <GridPane gridLinesVisible="true" layoutX="6.0" layoutY="111.0" prefHeight="181.0" prefWidth="637.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="0.0" prefWidth="0.0" />
+                                          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="08/10/2019 - 08/11/2019" textAlignment="CENTER" wrappingWidth="139.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="4.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="116.0" prefWidth="131.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Éthique et culture religieuse" wrappingWidth="114.13671875">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="6.0" />
+                                                   </VBox.margin>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NoCours:12345" wrappingWidth="83.552734375">
+                                                   <VBox.margin>
+                                                      <Insets left="6.0" />
+                                                   </VBox.margin>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                          <VBox alignment="CENTER" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="1">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dates" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: lightgrey;">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Intitulé Cours et NoCours" textAlignment="CENTER" wrappingWidth="110.41015625">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="2">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tarif cours" textAlignment="CENTER" wrappingWidth="100.748046875">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="87.0" prefWidth="259.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="3">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Commentaires Membre" textAlignment="CENTER" wrappingWidth="159.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="92.0" prefWidth="111.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1250$" />
+                                             </children>
+                                          </VBox>
+                                          <TextArea prefHeight="90.0" prefWidth="277.0" text="J'ai vraiment adoré le cours ! J'aurais jamais imagin|" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <Text layoutX="12.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez écrire votre ou vos commentaire dans la zone prévue à cet effet et cliquer sur le bouton ci-dessous pour le soumettre" wrappingWidth="631.13671875">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Button layoutX="230.0" layoutY="409.0" mnemonicParsing="false" text="Soumettre le commentaire">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </content>
+            </ScrollPane>
+      </items>
+    </SplitPane>
+  </children>
+</VBox>
