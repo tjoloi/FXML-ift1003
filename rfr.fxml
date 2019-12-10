@@ -181,7 +181,7 @@
                                              <children>
                                                 <VBox prefHeight="563.0" prefWidth="650.0">
                                                    <children>
-                                                      <TextField alignment="CENTER" prefHeight="117.0" prefWidth="667.0" text="Gabriel Boduet - 234567">
+                                                      <TextField alignment="CENTER" prefHeight="117.0" prefWidth="667.0" text="Gabriel Boudet - 234567">
                                                          <font>
                                                             <Font size="22.0" />
                                                          </font>
