@@ -140,6 +140,14 @@
                                                 <TextField />
                                              </children>
                                           </HBox>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Valider">
+                                             <opaqueInsets>
+                                                <Insets left="20.0" />
+                                             </opaqueInsets>
+                                             <VBox.margin>
+                                                <Insets left="30.0" top="30.0" />
+                                             </VBox.margin>
+                                          </Button>
                                        </children>
                                     </VBox>
                                  </children>
