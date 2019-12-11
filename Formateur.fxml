@@ -91,6 +91,41 @@
                <content>
                   <TabPane prefHeight="559.0" prefWidth="655.0" tabClosingPolicy="UNAVAILABLE">
                     <tabs>
+                      <Tab text="Formulaire d'emploi">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous souhaitez travailler chez Formatout-Africa ? " wrappingWidth="648.13671875">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soumettez votre candidature ici ! " wrappingWidth="648.13671875">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Button layoutX="236.0" layoutY="479.0" mnemonicParsing="false" text="Soumettre mes renseignements" />
+                                    <TextArea layoutX="59.0" layoutY="209.0" prefHeight="200.0" prefWidth="537.0" text="Écrivez votre texte ici">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </TextArea>
+                                    <HBox alignment="CENTER_LEFT" layoutX="60.0" layoutY="409.0" prefHeight="32.0" prefWidth="535.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chemin du fichier : " />
+                                          <TextField prefHeight="25.0" prefWidth="354.0" />
+                                          <Button mnemonicParsing="false" text="Parcourir...">
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <Text layoutX="60.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mettez votre CV et lettre d'accompagnement dans un fichier zip et joignez-le ici ou écrivez ces informations dans la boite de texte ci-dessous" wrappingWidth="535.13671875" />
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
                         <Tab text="Choix des cours a donner">
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
@@ -381,11 +416,6 @@
                                        </children>
                                     </GridPane>
                                  </children></AnchorPane>
-                        </content>
-                      </Tab>
-                      <Tab text="Formulaire d'emploi">
-                        <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                         </content>
                       </Tab>
                         <Tab text="Désistement">
