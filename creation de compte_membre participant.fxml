@@ -99,7 +99,7 @@
 								</HBox>
                         <VBox prefHeight="481.0" prefWidth="656.0" style="-fx-border-color: grey;">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Création d'un compte de type: Formateur">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Création d'un compte de type: Membre participant">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
                                  </font>
